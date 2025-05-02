@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tizimga kirish</title>
+</head>
+<body>
+    <h2>Kirish</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Kirish</button>
+    </form>
+    <a href="{% url 'register' %}">Ro‘yxatdan o‘tish</a>
+</body>
+</html>

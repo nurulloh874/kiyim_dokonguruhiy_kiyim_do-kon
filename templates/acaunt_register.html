@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ro‘yxatdan o‘tish</title>
+</head>
+<body>
+    <h2>Ro‘yxatdan o‘tish</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Yuborish</button>
+    </form>
+    <a href="{% url 'login' %}">Tizimga kirish</a>
+</body>
+</html>
